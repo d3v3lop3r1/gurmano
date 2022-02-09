@@ -1,0 +1,2 @@
+php artisan aimeos:jobs "admin/cache admin/log catalog/import/csv order/cleanup/unpaid product/import/csv product/bought index/rebuild index/optimize product/export/sitemap subscription/process/begin subscription/process/renew subscription/process/end"
+

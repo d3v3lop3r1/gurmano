@@ -51,8 +51,8 @@
 @isset($actionText)
 @slot('subcopy')
 @lang(
-    "If you’re having trouble clicking the \":actionText\" button, copy and paste the URL below\n".
-    'into your web browser: [:actionURL](:actionURL)',
+    "Ha problémáid akadtak a levél olvasásával, nyomd meg a \":actionText\" gombot, másold és illeszd be a lenti URL-t \n".
+    'a böngésződbe: [:actionURL](:actionURL)',
     [
         'actionText' => $actionText,
         'actionURL' => $actionUrl,

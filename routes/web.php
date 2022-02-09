@@ -32,3 +32,4 @@ Route::group($locale ?? [], function() {
         ->name('aimeos_page')->where( 'path', '.*' );
 
 });
+
