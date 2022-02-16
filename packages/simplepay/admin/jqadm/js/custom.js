@@ -1,0 +1,3 @@
+/*
+ * Custom simplepay JS
+ */

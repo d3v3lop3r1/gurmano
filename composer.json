@@ -1,7 +1,7 @@
 {
-    "name": "aimeos/aimeos",
-    "description": "Aimeos ecommerce and shop system",
-    "keywords": ["aimeos", "ecommerce", "shop", "laravel", "distribution"],
+    "name": "gurmano/gurmano",
+    "description": "Gurmano ecommerce and shop system",
+    "keywords": ["Gurmano", "ecommerce", "shop", "laravel", "distribution"],
     "license": "MIT",
     "type": "project",
     "prefer-stable": true,
@@ -9,18 +9,22 @@
     "repositories": [{
         "type": "composer",
         "url": "https://packages.aimeos.org/aimeoscom"
+    }, {
+        "type": "path",
+        "url": "packages/*"
     }],
     "require": {
-        "php": "^7.3||^8.0",
-        "composer-runtime-api": "^2.1",
-        "aimeos/ai-cms-grapesjs": "^2021.10",
-        "aimeos/aimeos-laravel": "2021.10.*",
-        "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.54",
-        "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5",
-        "laravel/ui": "^3.0"
+    "php": "^7.3||^8.0",
+    "composer-runtime-api": "^2.1",
+    "aimeos/ai-cms-grapesjs": "^2021.10",
+    "aimeos/ai-payments": "^2021.10",
+    "aimeos/aimeos-laravel": "2021.10.*",
+    "fruitcake/laravel-cors": "^2.0",
+    "guzzlehttp/guzzle": "^7.0.1",
+    "laravel/framework": "^8.54",
+    "laravel/sanctum": "^2.11",
+    "laravel/tinker": "^2.5",
+    "laravel/ui": "^3.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -48,17 +52,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        },
-        "classmap": [
-            "ext/gurmano-extension/lib/custom/src",
-            "ext/gurmano-extension/controller/common/src",
-            "ext/gurmano-extension/controller/frontend/src",
-            "ext/gurmano-extension/controller/jobs/src",
-            "ext/gurmano-extension/client/html/src",
-            "ext/gurmano-extension/client/jsonapi/src",
-            "ext/gurmano-extension/admin/jqadm/src",
-            "ext/gurmano-extension/admin/jsonadm/src"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
