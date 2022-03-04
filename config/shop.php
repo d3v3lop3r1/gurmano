@@ -53,7 +53,6 @@ return $routes + [
 		'checkout-index' => [ 'checkout/standard' ],
 		'checkout-update' => [ 'checkout/update' ],
 		'supplier-detail' => ['basket/mini','catalog/tree','catalog/search','supplier/detail','catalog/lists'],
-		'foxpost-index' => ['catalog/home'],
 	],
 
 
@@ -97,9 +96,20 @@ return $routes + [
 						'color' => 'radio',
 						'length' => 'radio',
 						'width' => 'radio',
+						'izvaltozat' => 'radio',
 					],
 				],
 			],
+			// 'checkout' => [
+			// 	'standard' => [
+			// 		'delivery' => [
+			// 			'subparts' => [
+			// 				'Foxatmsearch'
+			// 			]
+			// 		]
+			// 	]
+			// ]
+			
 		],
 	],
 
